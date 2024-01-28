@@ -1,0 +1,306 @@
+[{
+  "_id": {
+    "$oid": "64ef2a6d2a75cb8d76781928"
+  },
+  "name": "Basics of Cascading Styling Sheets",
+  "description": "CSS display property",
+  "duration": "1 week",
+  "cost": "100$",
+  "owner": {
+    "$oid": "64e7b1163bc9b94d553ba4e9"
+  },
+  "comments": [
+    {
+      "$oid": "64ef51a32a75cb8d76781a6b"
+    },
+    {
+      "$oid": "64f0953a20d37c16bca41061"
+    },
+    {
+      "$oid": "64f0a04520d37c16bca4114e"
+    },
+    {
+      "$oid": "64f0dada5dd23ad7c6666ecc"
+    },
+    {
+      "$oid": "64f0db365dd23ad7c6666ee4"
+    },
+    {
+      "$oid": "64f0dcc72027d306c93ebfe6"
+    },
+    {
+      "$oid": "64f0ddc82027d306c93ebff3"
+    },
+    {
+      "$oid": "64f0dde32027d306c93ebff6"
+    },
+    {
+      "$oid": "64f0de372027d306c93ebff9"
+    },
+    {
+      "$oid": "64f0de622027d306c93ebffc"
+    },
+    {
+      "$oid": "64f0de8c2027d306c93ebfff"
+    },
+    {
+      "$oid": "64f0deb02027d306c93ec008"
+    },
+    {
+      "$oid": "64f0debd2027d306c93ec014"
+    },
+    {
+      "$oid": "64f0dee12027d306c93ec023"
+    },
+    {
+      "$oid": "64f0df022027d306c93ec02f"
+    },
+    {
+      "$oid": "64f0df532027d306c93ec044"
+    },
+    {
+      "$oid": "64f0df6c2027d306c93ec050"
+    },
+    {
+      "$oid": "64f0dfac2027d306c93ec059"
+    },
+    {
+      "$oid": "64f0e04c9a3da9e845106c41"
+    },
+    {
+      "$oid": "64f0e0759a3da9e845106c48"
+    },
+    {
+      "$oid": "64f0e0c19a3da9e845106c4e"
+    },
+    {
+      "$oid": "64f0e0c59a3da9e845106c53"
+    },
+    {
+      "$oid": "64f0e0c89a3da9e845106c58"
+    },
+    {
+      "$oid": "64f241ba4760c60929b34296"
+    },
+    {
+      "$oid": "64f241de4760c60929b3429f"
+    },
+    {
+      "$oid": "64f241f54760c60929b342a5"
+    },
+    {
+      "$oid": "64f2420c4760c60929b342ab"
+    },
+    {
+      "$oid": "64f2420e4760c60929b342ae"
+    },
+    {
+      "$oid": "64f242924760c60929b342bd"
+    },
+    {
+      "$oid": "64f243384760c60929b342d4"
+    },
+    {
+      "$oid": "64f243d24760c60929b342dd"
+    },
+    {
+      "$oid": "64f244788c4439a443c101ab"
+    },
+    {
+      "$oid": "64f2448e8c4439a443c101ae"
+    },
+    {
+      "$oid": "64f2449fd12a2bd74b4189ce"
+    },
+    {
+      "$oid": "64f2456bd12a2bd74b4189d5"
+    },
+    {
+      "$oid": "64f24584d12a2bd74b4189da"
+    },
+    {
+      "$oid": "64f2460fd12a2bd74b4189e7"
+    },
+    {
+      "$oid": "64f246ffd12a2bd74b4189f6"
+    },
+    {
+      "$oid": "64f247a3d12a2bd74b4189ff"
+    },
+    {
+      "$oid": "64f247c3d12a2bd74b418a08"
+    },
+    {
+      "$oid": "64f249b2d12a2bd74b418a23"
+    },
+    {
+      "$oid": "64f249c3d12a2bd74b418a26"
+    },
+    {
+      "$oid": "64f249cad12a2bd74b418a2f"
+    },
+    {
+      "$oid": "64f24b80d12a2bd74b418a52"
+    },
+    {
+      "$oid": "64f33da2091e0fc132fbf59b"
+    },
+    {
+      "$oid": "64f34e83a2ad385fddeb8606"
+    },
+    {
+      "$oid": "64f34eb0a2ad385fddeb8637"
+    },
+    {
+      "$oid": "64f37091c9945fd951c1181c"
+    },
+    {
+      "$oid": "64f42e8d499d5c4a0003fa19"
+    },
+    {
+      "$oid": "64f42e90499d5c4a0003fa1c"
+    },
+    {
+      "$oid": "64f42e91499d5c4a0003fa1f"
+    },
+    {
+      "$oid": "64f4315c499d5c4a0003fb3c"
+    },
+    {
+      "$oid": "64f4315e499d5c4a0003fb3f"
+    },
+    {
+      "$oid": "64f43160499d5c4a0003fb42"
+    },
+    {
+      "$oid": "64f43162499d5c4a0003fb45"
+    },
+    {
+      "$oid": "64f43164499d5c4a0003fb48"
+    },
+    {
+      "$oid": "64f43166499d5c4a0003fb4b"
+    },
+    {
+      "$oid": "64f43168499d5c4a0003fb4e"
+    },
+    {
+      "$oid": "64f4316b499d5c4a0003fb51"
+    },
+    {
+      "$oid": "64f4316d499d5c4a0003fb54"
+    },
+    {
+      "$oid": "64f4316f499d5c4a0003fb57"
+    },
+    {
+      "$oid": "64f43203499d5c4a0003fc8a"
+    },
+    {
+      "$oid": "64f43206499d5c4a0003fc8d"
+    },
+    {
+      "$oid": "64f43209499d5c4a0003fc90"
+    },
+    {
+      "$oid": "64f4320e499d5c4a0003fc93"
+    },
+    {
+      "$oid": "64f43210499d5c4a0003fc96"
+    },
+    {
+      "$oid": "64f43213499d5c4a0003fc99"
+    },
+    {
+      "$oid": "64f49df224d514eeec569c73"
+    },
+    {
+      "$oid": "64f4a0a124d514eeec569e05"
+    },
+    {
+      "$oid": "653aabd105176086831f8c12"
+    }
+  ],
+  "descriptionDetails": "You will be able to make an attractive design that is full responsive display style for your web page.",
+  "instructorInfo": "Expertise in working with different\nCSS styles and binding displays for the best web design",
+  "lectures": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ef2df42a75cb8d76781974"
+  },
+  "name": "CSS flexbox",
+  "description": "Learn about CSS display flexbox",
+  "duration": "5 days",
+  "cost": "100 $",
+  "owner": {
+    "$oid": "64e7b1163bc9b94d553ba4e9"
+  },
+  "comments": [
+    {
+      "$oid": "64f34ffca2ad385fddeb865e"
+    },
+    {
+      "$oid": "64f42ac6499d5c4a0003f9ac"
+    },
+    {
+      "$oid": "64f42b45499d5c4a0003f9bc"
+    },
+    {
+      "$oid": "64f42f65499d5c4a0003fac9"
+    },
+    {
+      "$oid": "64f432d5499d5c4a0003fdb4"
+    },
+    {
+      "$oid": "64f432d8499d5c4a0003fdb7"
+    },
+    {
+      "$oid": "64f432dc499d5c4a0003fdba"
+    },
+    {
+      "$oid": "64f432df499d5c4a0003fdbd"
+    },
+    {
+      "$oid": "64f432e1499d5c4a0003fdc0"
+    },
+    {
+      "$oid": "64f49db424d514eeec569bd1"
+    },
+    {
+      "$oid": "64f49dc524d514eeec569bd6"
+    },
+    {
+      "$oid": "64f4a11524d514eeec569e79"
+    },
+    {
+      "$oid": "64f4a19824d514eeec569edc"
+    }
+  ],
+  "descriptionDetails": "You will learn how to use flexbox in designing your web page in the best practice ways.",
+  "instructorInfo": "Expertise in web design and getting the best solution to teach you how to get the design you imagined to the real world.",
+  "lectures": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ef37122a75cb8d767819a5"
+  },
+  "name": "CSS Media Queries",
+  "description": "Making responsive web designs",
+  "duration": "3 days",
+  "cost": "70$",
+  "owner": {
+    "$oid": "64e7b1163bc9b94d553ba4e9"
+  },
+  "comments": [
+    {
+      "$oid": "653aaef305176086831f8dec"
+    }
+  ],
+  "descriptionDetails": "The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.\n\nExamples: You could have one set of style rules for computer screens, one for printers, one for handheld devices, one for television-type devices, and so on.\n\nUnfortunately these media types never got a lot of support by devices, other than the print media type.",
+  "instructorInfo": "Expertise",
+  "lectures": [],
+  "__v": 0
+}]

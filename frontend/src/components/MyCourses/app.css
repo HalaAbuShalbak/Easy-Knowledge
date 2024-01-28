@@ -1,0 +1,21 @@
+
+
+
+#deleted{
+  position: relative;
+ 
+}
+.addbtn{
+  margin-top: 2%;
+  display: flex;
+justify-content: flex-end;
+
+}
+@media only screen and (max-width: 600px){
+  .addbtn{
+    margin-top: 2%;
+    display: flex;
+  justify-content:center;
+  
+  }
+}

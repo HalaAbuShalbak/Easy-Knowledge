@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+
+}
+.button {
+  width: 40%;
+  background-color: rgb(245, 249, 249);
+  border-radius: 1.5rem;
+  font-weight: normal;
+  align-self: center;
+ font-size: 16px;
+ height: 12%;
+
+}
+.button:hover{
+  color: rgb(1, 6, 10);
+  background-color: rgba(169, 169, 169, 0.445);
+  border: black groove 3px;
+  font-weight: bolder;
+  text-align: center;
+ padding: 0;
+}
+
+.pass { 
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  min-width: fit-content;
+  max-width: 50%;
+  max-height:fit-content;
+  border-radius: .7rem;
+grid-row: 2;
+grid-column: 2;
+ background-color: rgba(9, 151, 70, 0.512);
+ margin: 0%;
+}
+.fail {
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  width: fit-content;
+  max-height:fit-content;
+  border-radius: .7rem;
+  background-color: rgba(224, 31, 31, 0.51);
+grid-row: 2;
+grid-column: 2;
+
+
+  
+
+ 
+}
+.Course{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 3px #82a190 outset;
+  border-radius: 2rem;
+  box-shadow: 3px 3px 5px gray;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1rem;
+  gap: 1rem;
+ 
+
+
+}
+.Course:hover{
+  background-color: rgba(2, 7, 10, 0.872);
+  color: #f3f3f3;
+  border-radius: 5px 4px 8px rgba(126, 227, 236, 0.907);
+  border: 3px #06909d inset ;
+}
+#button:hover{
+  background-color: rgba(125, 204, 253, 0.872);
+  color: black;
+  border-radius: 5px 4px 8px rgba(126, 227, 236, 0.907);
+  border: 3px #06909d groove ;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid pearl;
+  border-right: 16px solid yellowgreen;
+  border-bottom: 16px solid pearl;
+  border-left: 16px solid skyblue;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.DashBoard{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+ margin: 5rem;
+ gap: 3rem;
+ max-height: 100vh;
+}
+.details{
+  margin: 1rem;
+  max-height: 90%;
+  max-width: 90%;
+}
+@media only screen and (max-width: 600px){
+  .button{
+  font-size: 16px;
+  width: 80%;
+  height: 2rem;
+  text-align:center;
+}
+}
+@media only screen and (max-width: 775px) {
+  .DashBoard{
+    display: grid; 
+   grid-template-columns: 1fr;
+  }
+  #button:enabled{
+    background-color: rgba(125, 204, 253, 0.872);
+    color: black;
+    border-radius: 5px 4px 8px rgba(126, 227, 236, 0.907);
+    border: 3px #06909d groove ;
+    width: 80%;
+    height: fit-content;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .Course:active{
+    background-color: rgba(2, 7, 10, 0.872);
+    color: #f3f3f3;
+    border-radius: 5px 4px 8px rgba(126, 227, 236, 0.907);
+    border: 3px #06909d inset ;
+  }
+}
+

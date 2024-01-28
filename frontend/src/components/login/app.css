@@ -1,0 +1,87 @@
+
+.LoginContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(174, 217, 217, 0.391);
+}
+
+
+.Login{
+  align-content: center;
+  width: 40vw;
+  height: 50%;
+  border-radius: 2em;
+  border: 2px solid black;
+  box-shadow: -5px 8px 5px 3px rgba(45, 45, 46, 0.571);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-size: large;
+    background-color: rgba(4, 129, 56, 0.322);
+}
+#loginContent{
+    border-radius: 1rem;
+   width: 70%;
+   text-align: center;
+   height: 12%;
+  text-align: center;
+  font-size: 20px;  
+ 
+}
+.loginmsg{
+  position: sticky;
+  text-align: center;
+  background-color:rgba(85, 82, 79, 0.84);
+  color: white;
+  border-radius: 8px;
+  width: 80%;
+  
+
+}
+.outer{
+  position: relative;
+  right:0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .LoginContainer{
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: .5rem; */
+    justify-content: center;
+padding: 0%;
+  }
+
+  #loginContent{
+  align-self: center;
+   text-align: center;
+  font-size: 18px;
+  height: 30%;
+  width: 100%;
+ padding: 2%,1%;
+
+  
+
+  }
+  .Login{
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    padding: 7%;
+    gap: 1rem;
+  }
+  .instructorImage {
+    width: 100%;
+    height:100%;
+  }
+ 
+
+}

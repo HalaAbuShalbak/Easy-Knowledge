@@ -1,0 +1,15 @@
+#button{
+    width: 80%;
+    background-color: rgb(245, 249, 249);
+    border-radius: 1.5rem;
+    font-weight: normal;
+    align-self: center;
+   font-size: 16px;
+   height: 12%;
+}
+#button:hover{
+  background-color: rgba(125, 204, 253, 0.872);
+  color: black;
+  border-radius: 5px 4px 8px rgba(126, 227, 236, 0.907);
+  border: 3px #06909d groove ;
+}

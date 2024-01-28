@@ -1,0 +1,172 @@
+
+
+  .Info_container{
+    display: grid;
+    padding: 1em;
+ 
+   
+  }
+  .CourseInfo{
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-content: flex-start;
+  }
+  .Ins_info{
+    grid-area: "InsInfo";
+display: flex;
+flex-direction: column;
+border: .35rem outset rgba(100, 148, 237, 0.697);
+border-radius: 1rem;
+background-color: rgba(195, 203, 218, 0.234);
+padding:2%;
+
+}
+
+
+
+  .enroll{
+    margin-top: 3rem;
+    width:10rem;
+    background-color: rgba(198, 242, 238, 0.891);
+    font-weight: bold;
+    border-radius: 1rem;
+    grid-area:"button" ;
+  }
+  .enroll:disabled{
+    background-color: rgba(0, 0, 0, 0.514);
+    color: beige;
+  }
+  .middle{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem;
+    padding: .5em;
+  }
+  .description{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+   
+
+  }
+  .detail_p{
+    text-align: left;
+    width: 100%;
+    height: fit-content;
+  font-size: 20px;
+
+  }
+  .Instructor{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(10, 10, 69);
+  }
+ .insinfocontainer{
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+  /* border: .2rem outset rgb(181, 183, 186); */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:1rem;
+ }
+ .Insinfotext{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  font-size: 1rem;
+  align-items: end;
+  
+ }
+ .Comments{
+  border: 2px  rgb(10, 10, 69) solid;
+  font-size: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: rgba(100, 148, 237, 0.356);
+color: black;
+border-radius: .5rem;
+padding: .5rem;
+width: 50%;
+line-height: 0%;
+
+ }
+ .feedback{
+ display: flex;
+ flex-direction: column;
+  gap: 1rem;
+ }
+ .Insinfoimg{
+  border-radius: 70px;
+  border: rgb(249, 245, 232) 2px inset;
+  width: 100%;
+  height: 100%;
+ }
+ .Input {
+  align-content: center;
+  width: 60vw;
+  height: 70vh;
+  border-radius: 2em;
+  border: 2px solid black;
+  box-shadow: -5px 8px 5px 3px rgba(111, 113, 118, 0.571);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: medium;
+  background-color: rgba(55, 205, 236, 0.214);
+  padding: 1rem 0.5rem;
+}
+
+.UpdateInfo {
+  display: flex;
+
+ 
+  /* grid-template-areas: '..msgs'; */
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+.commentshape{
+  display: flex;
+  align-items: center;
+  /* line-height: 0%; */
+}
+ @media only screen and (max-width: 700px){
+  .middle{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2em;
+  }
+  .insinfocontainer{
+    display: grid;
+    grid-template-columns:1fr;
+   }
+    .detail_p{
+    text-align: left;
+    width: 100%;
+    height: fit-content;
+  font-size: 24px;
+
+  }
+  .Comments{
+    border: 2px  rgb(10, 10, 69) solid;
+    font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(100, 148, 237, 0.356);
+  color: black;
+  border-radius: .5rem;
+  padding: .5rem;
+  width: 90vw;
+  line-height: 0%;
+  
+   }
+ }

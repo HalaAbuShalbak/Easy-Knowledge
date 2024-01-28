@@ -1,0 +1,11 @@
+.logo{
+    color: rgb(28, 106, 174);
+   font-family:monospace;
+   font-size: 2rem;
+   text-decoration-line: none;
+}
+.logo:hover{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow:1px 2px 2px black;
+}
