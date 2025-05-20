@@ -1,7 +1,6 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -11,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@mapbox/node-pre-gyp": "^2.0.0",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -19,6 +19,14 @@
     "mongoose": "^7.4.3",
     "mongoose-type-url": "^2.1.0",
     "mongoose-validator": "^2.1.0",
+    "node-fetch": "^3.3.2",
     "nodemon": "^3.0.1"
-  }
+  },
+"resolutions": {
+  "punycode": "2.1.1",
+  "tr46": "3.0.0"
+
+}
+,
+  "description": ""
 }

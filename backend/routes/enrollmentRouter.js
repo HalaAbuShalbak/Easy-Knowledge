@@ -11,14 +11,14 @@ const {
 enrollmentRouter.post(
   "/create",
   authentication,
-  authorization("enroll_to_course"),
+  // authorization("enroll_to_course"),
   createEnrollModel
 );
 enrollmentRouter.get("/enrolled", authentication, getEnrolled);
 enrollmentRouter.delete(
   "/withdraw/:id",
   authentication,
-  authorization("withdraw_course"),
+  // authorization("withdraw_course"),
   withdraw
 );
 

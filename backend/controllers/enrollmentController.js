@@ -1,9 +1,8 @@
 const enrollmentModel = require("../models/enrollmentSchema");
 // create model for every course
 const createEnrollModel = (req, res) => {
-
   const { course, user } = req.body;
-  enrollmentModel.findOne({ course: course,user:user }).then((found) => {
+  enrollmentModel.findOne({ course: course, user: user }).then((found) => {
     if (!found) {
       const enrolled = new enrollmentModel({
         user,
@@ -19,8 +18,7 @@ const createEnrollModel = (req, res) => {
               message: `The user ${req.token.name} is now enrolled to the course `,
               course: x,
             });
-          } catch (error) {
-          }
+          } catch (error) {}
         })
         .catch((err) => {
           res.status(500).json({
@@ -32,57 +30,57 @@ const createEnrollModel = (req, res) => {
       res.status(400).json({
         success: true,
         message: `The user ${req.token.name} is  already enrolled to the course`,
-   
       });
     }
   });
 };
-// get all enrolled courses
+//  get all enrolled courses per user
 const getEnrolled = (req, res) => {
+  const { userId } = req.token;
+
   enrollmentModel
-    .find({}, { _id: 0, __v: 0, user: 0 })
+    .find({ user: userId }, { _id: 0, __v: 0, user: 0 })
     .populate({
       path: "course",
       populate: { path: "owner", select: "-_id -__v -password -role" },
     })
     .then((result) => {
-      res.status(201).json({
+      res.status(200).json({
         success: true,
-        message: result,
-       
+        data: result,
       });
     })
-
     .catch((err) => {
       res.status(500).json({
         success: false,
         message: "Server Error",
-        err: err.message,
+        error: err.message,
       });
     });
 };
+
 // withdraw course:
 const withdraw = (req, res) => {
-  const id = req.params.id;
+  const courseId = req.params.id;
+  const { userId } = req.token;
   enrollmentModel
-    .findOneAndDelete({ course: id }, { __v: 0, user: 0 })
+    .findOneAndDelete({ course: courseId, user: userId })
     .populate("course", "-_id -__v")
     .then((result) => {
       if (result) {
         res.status(200).json({
           success: true,
-          message: "Course widthdawn",
+          message: "Course withdrawn",
           withdrawn: result,
         });
       } else {
         res.status(404).json({
           success: false,
-          withdrawn: "course not found ",
+          message: "Enrollment not found",
         });
       }
     })
     .catch((err) => {
-
       res.status(500).json({
         success: false,
         message: "Server error",
@@ -90,4 +88,5 @@ const withdraw = (req, res) => {
       });
     });
 };
+
 module.exports = { createEnrollModel, getEnrolled, withdraw };

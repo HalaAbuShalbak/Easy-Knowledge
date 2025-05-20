@@ -1,17 +1,13 @@
 const lectureModel = require("../models/lectureSchema");
-const courseModel=require("../models/courseSchema")
+const courseModel = require("../models/courseSchema");
 // create
 const createLecture = (req, res) => {
-  const courseId=req.params.courseId
-  const { article, lecture,
-     question, answers 
-    } = req.body;
+  const courseId = req.params.courseId;
+  const { article, lecture } = req.body;
   const newLec = new lectureModel({
-    course:courseId,
+    course: courseId,
     article,
     lecture,
-    question ,
-    answers,
   });
   newLec
     .save()
@@ -31,14 +27,12 @@ const createLecture = (req, res) => {
     });
 };
 
-
 const pushNewLecture = (req, res) => {
   const course_id = req.params.id;
-  const {course, lecture } = req.body;
+  const { course, lecture } = req.body;
   const newLecture = new lectureModel({
     course,
-    lecture
-   
+    lecture,
   });
   newLecture
     .save()
@@ -74,7 +68,7 @@ const pushNewLecture = (req, res) => {
 };
 // getAllLectures
 const getAllLectures = (req, res) => {
-  const id = req.params.userId
+  const id = req.params.userId;
   lectureModel
     .find({ owner: id })
     .populate("lecture")
@@ -83,7 +77,6 @@ const getAllLectures = (req, res) => {
       populate: { path: "owner", select: "-_id -__v -password -role" },
     })
     .then((result) => {
-
       res.status(201).json({
         success: true,
         message: "all lectures",
@@ -99,45 +92,20 @@ const getAllLectures = (req, res) => {
     });
 };
 
-// update
-const updateLectureAdd = (req, res) => {
-  const id = req.params.id;
-  const { lecture, answers } = req.body;
-  lectureModel
-    .findByIdAndUpdate(id, {
-      $push: { lecture: lecture, answers: answers },
-    } ,{ new: true })
-    .then((result) => {
-      if (!result) {
-        res.status(404).json({
-          success: false,
-          message: "lecture not found",
-        });
-      } else {
-        res.status(201).json({
-          success: true,
-          message: "lecture updated",
-          updatedLecture: result,
-        });
-      }
-    })
-    .catch((err) => {
-      res.status(500).json({
-        success: false,
-        message: "Server Error",
-        err: err.message,
-      });
-    });
-};
-//
 
+//
+// ! I have to test this one , its supposed to remove a lecture from the course without deleting it from the database
 const updateLectureRemove = (req, res) => {
   const id = req.params.id;
-  const { lecture, answers } = req.body;
+  const { lecture } = req.body;
   lectureModel
-    .findByIdAndUpdate(id, {
-      $pull: { lecture: lecture, answers: answers },
-    },{ new: true })
+    .findByIdAndUpdate(
+      id,
+      {
+        $pull: { lecture: lecture},
+      },
+      { new: true }
+    )
     .then((result) => {
       if (!result) {
         res.status(404).json({
@@ -147,8 +115,7 @@ const updateLectureRemove = (req, res) => {
       } else {
         res.status(201).json({
           success: true,
-          message: "lecture updated",
-          updatedLecture: result,
+          message: "lecture hidden successfully",
         });
       }
     })
@@ -174,7 +141,7 @@ const deleteLecture = (req, res) => {
       if (result) {
         res.status(200).json({
           success: true,
-          message:"Lecture deleted successfully",
+          message: "Lecture deleted successfully",
           deletedLecture: result,
         });
       } else {
@@ -185,7 +152,6 @@ const deleteLecture = (req, res) => {
       }
     })
     .catch((err) => {
-
       res.status(500).json({
         success: false,
         message: "Server error",
@@ -193,8 +159,10 @@ const deleteLecture = (req, res) => {
       });
     });
 };
+
+// 
 const getLecturesByCourse = (req, res) => {
-  const id = req.params.id
+  const id = req.params.id;
   lectureModel
     .find({ course: id })
     .populate("lecture")
@@ -203,7 +171,6 @@ const getLecturesByCourse = (req, res) => {
       populate: { path: "owner", select: "-_id -__v -password -role" },
     })
     .then((result) => {
-
       res.status(201).json({
         success: true,
         message: "all lectures",
@@ -222,10 +189,8 @@ const getLecturesByCourse = (req, res) => {
 module.exports = {
   createLecture,
   getAllLectures,
-  updateLectureAdd,
   deleteLecture,
   updateLectureRemove,
   pushNewLecture,
-  getLecturesByCourse
+  getLecturesByCourse,
 };
-

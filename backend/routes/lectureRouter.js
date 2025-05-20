@@ -18,12 +18,7 @@ lectureRouter.post(
   authorization("add_lectures"),
   createLecture
 );
-lectureRouter.put(
-  "/updateAdd/:id",
-  authentication,
-  authorization("update_lectures"),
-  updateLectureAdd
-);
+
 lectureRouter.put(
   "/updateRemove/:id",
   authentication,

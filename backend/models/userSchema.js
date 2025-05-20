@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
-const validate = require("mongoose-validator");
+// bcrypt for hashing the password
 const bcrypt = require("bcrypt");
+// mongoose validator for schema entries validation
+const validate = require("mongoose-validator");
+// the validation requirements for the password
 const passwordValidator = validate({
   validator: "matches",
   arguments:
